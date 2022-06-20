@@ -1,0 +1,862 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B3BFDCF2860EA1100256C05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3BFDCE2860EA1100256C05 /* AppDelegate.swift */; };
+		2B3BFDD82860EA1200256C05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B3BFDD72860EA1200256C05 /* Assets.xcassets */; };
+		2B3BFDDB2860EA1200256C05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B3BFDD92860EA1200256C05 /* LaunchScreen.storyboard */; };
+		2B3BFDE62860EA1200256C05 /* TheKnifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3BFDE52860EA1200256C05 /* TheKnifeTests.swift */; };
+		2B3BFDF02860EA1300256C05 /* TheKnifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3BFDEF2860EA1300256C05 /* TheKnifeUITests.swift */; };
+		2B3BFDF22860EA1300256C05 /* TheKnifeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3BFDF12860EA1300256C05 /* TheKnifeUITestsLaunchTests.swift */; };
+		2B3BFE052860F35700256C05 /* ReactiveKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2B3BFE042860F35700256C05 /* ReactiveKit */; };
+		2B3BFE082860F38200256C05 /* Bond in Frameworks */ = {isa = PBXBuildFile; productRef = 2B3BFE072860F38200256C05 /* Bond */; };
+		2B3BFE0B2860F3C600256C05 /* SwifterSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2B3BFE0A2860F3C600256C05 /* SwifterSwift */; };
+		2B3BFE0E2860F3E600256C05 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2B3BFE0D2860F3E600256C05 /* SnapKit */; };
+		2B3BFE112861064400256C05 /* Dip in Frameworks */ = {isa = PBXBuildFile; productRef = 2B3BFE102861064400256C05 /* Dip */; };
+		2B3BFE142861080000256C05 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3BFE132861080000256C05 /* MainViewController.swift */; };
+		2B3BFE162861082600256C05 /* RestaurantsListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3BFE152861082600256C05 /* RestaurantsListController.swift */; };
+		2B3BFE1928610E4A00256C05 /* RestaurantsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3BFE1828610E4A00256C05 /* RestaurantsListViewModel.swift */; };
+		2B3BFE1B28610E7C00256C05 /* RestaurantsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3BFE1A28610E7C00256C05 /* RestaurantsListView.swift */; };
+		2B3BFE1F286110A800256C05 /* RestaurantsStoreProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3BFE1E286110A800256C05 /* RestaurantsStoreProtocol.swift */; };
+		2B3BFE20286110A800256C05 /* RestaurantsStoreProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3BFE1E286110A800256C05 /* RestaurantsStoreProtocol.swift */; };
+		2B3BFE22286111FF00256C05 /* RestaurantsRestStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3BFE21286111FF00256C05 /* RestaurantsRestStore.swift */; };
+		2B3BFE23286111FF00256C05 /* RestaurantsRestStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3BFE21286111FF00256C05 /* RestaurantsRestStore.swift */; };
+		2B3BFE252861122B00256C05 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3BFE242861122B00256C05 /* Restaurant.swift */; };
+		2B3BFE262861122B00256C05 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3BFE242861122B00256C05 /* Restaurant.swift */; };
+		2B3BFE282861144100256C05 /* StoreProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3BFE272861144100256C05 /* StoreProtocol.swift */; };
+		2B3BFE292861144100256C05 /* StoreProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3BFE272861144100256C05 /* StoreProtocol.swift */; };
+		2B3BFE2D2861368600256C05 /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3BFE2C2861368600256C05 /* RestaurantCell.swift */; };
+		2B3BFE2E2861368600256C05 /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3BFE2C2861368600256C05 /* RestaurantCell.swift */; };
+		2B3BFE3028613C3E00256C05 /* RestaurantPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3BFE2F28613C3E00256C05 /* RestaurantPhoto.swift */; };
+		2B3BFE3128613C3E00256C05 /* RestaurantPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3BFE2F28613C3E00256C05 /* RestaurantPhoto.swift */; };
+		2B3BFE3328614F8E00256C05 /* RestaurantRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3BFE3228614F8E00256C05 /* RestaurantRating.swift */; };
+		2B3BFE3428614F8E00256C05 /* RestaurantRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3BFE3228614F8E00256C05 /* RestaurantRating.swift */; };
+		2B3BFE3628614FDF00256C05 /* RestaurantAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3BFE3528614FDF00256C05 /* RestaurantAddress.swift */; };
+		2B3BFE3728614FDF00256C05 /* RestaurantAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3BFE3528614FDF00256C05 /* RestaurantAddress.swift */; };
+		2B3BFE3A286166D400256C05 /* FavoritesStoreProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3BFE39286166D400256C05 /* FavoritesStoreProtocol.swift */; };
+		2B3BFE3B286166D400256C05 /* FavoritesStoreProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3BFE39286166D400256C05 /* FavoritesStoreProtocol.swift */; };
+		2B3BFE3D2861671400256C05 /* FavoritesDefaultsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3BFE3C2861671400256C05 /* FavoritesDefaultsStore.swift */; };
+		2B3BFE3E2861671400256C05 /* FavoritesDefaultsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3BFE3C2861671400256C05 /* FavoritesDefaultsStore.swift */; };
+		2B3BFE402861691900256C05 /* RestaurantsMockStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3BFE3F2861691900256C05 /* RestaurantsMockStore.swift */; };
+		2B3BFE412861691900256C05 /* RestaurantsMockStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3BFE3F2861691900256C05 /* RestaurantsMockStore.swift */; };
+		2B3BFE4328616C1000256C05 /* CustomComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3BFE4228616C1000256C05 /* CustomComponents.swift */; };
+		2B3BFE4428616C1000256C05 /* CustomComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3BFE4228616C1000256C05 /* CustomComponents.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B3BFDE22860EA1200256C05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B3BFDC32860EA1100256C05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B3BFDCA2860EA1100256C05;
+			remoteInfo = TheKnife;
+		};
+		2B3BFDEC2860EA1300256C05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B3BFDC32860EA1100256C05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B3BFDCA2860EA1100256C05;
+			remoteInfo = TheKnife;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2B3BFDCB2860EA1100256C05 /* TheKnife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheKnife.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B3BFDCE2860EA1100256C05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2B3BFDD72860EA1200256C05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B3BFDDA2860EA1200256C05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2B3BFDDC2860EA1200256C05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B3BFDE12860EA1200256C05 /* TheKnifeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheKnifeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B3BFDE52860EA1200256C05 /* TheKnifeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheKnifeTests.swift; sourceTree = "<group>"; };
+		2B3BFDEB2860EA1300256C05 /* TheKnifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheKnifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B3BFDEF2860EA1300256C05 /* TheKnifeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheKnifeUITests.swift; sourceTree = "<group>"; };
+		2B3BFDF12860EA1300256C05 /* TheKnifeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheKnifeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2B3BFE132861080000256C05 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		2B3BFE152861082600256C05 /* RestaurantsListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsListController.swift; sourceTree = "<group>"; };
+		2B3BFE1828610E4A00256C05 /* RestaurantsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsListViewModel.swift; sourceTree = "<group>"; };
+		2B3BFE1A28610E7C00256C05 /* RestaurantsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsListView.swift; sourceTree = "<group>"; };
+		2B3BFE1E286110A800256C05 /* RestaurantsStoreProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsStoreProtocol.swift; sourceTree = "<group>"; };
+		2B3BFE21286111FF00256C05 /* RestaurantsRestStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsRestStore.swift; sourceTree = "<group>"; };
+		2B3BFE242861122B00256C05 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		2B3BFE272861144100256C05 /* StoreProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreProtocol.swift; sourceTree = "<group>"; };
+		2B3BFE2C2861368600256C05 /* RestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
+		2B3BFE2F28613C3E00256C05 /* RestaurantPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantPhoto.swift; sourceTree = "<group>"; };
+		2B3BFE3228614F8E00256C05 /* RestaurantRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantRating.swift; sourceTree = "<group>"; };
+		2B3BFE3528614FDF00256C05 /* RestaurantAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantAddress.swift; sourceTree = "<group>"; };
+		2B3BFE39286166D400256C05 /* FavoritesStoreProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesStoreProtocol.swift; sourceTree = "<group>"; };
+		2B3BFE3C2861671400256C05 /* FavoritesDefaultsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesDefaultsStore.swift; sourceTree = "<group>"; };
+		2B3BFE3F2861691900256C05 /* RestaurantsMockStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsMockStore.swift; sourceTree = "<group>"; };
+		2B3BFE4228616C1000256C05 /* CustomComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomComponents.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B3BFDC82860EA1100256C05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B3BFE0B2860F3C600256C05 /* SwifterSwift in Frameworks */,
+				2B3BFE0E2860F3E600256C05 /* SnapKit in Frameworks */,
+				2B3BFE112861064400256C05 /* Dip in Frameworks */,
+				2B3BFE052860F35700256C05 /* ReactiveKit in Frameworks */,
+				2B3BFE082860F38200256C05 /* Bond in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B3BFDDE2860EA1200256C05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B3BFDE82860EA1300256C05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B3BFDC22860EA1100256C05 = {
+			isa = PBXGroup;
+			children = (
+				2B3BFDCD2860EA1100256C05 /* TheKnife */,
+				2B3BFDE42860EA1200256C05 /* TheKnifeTests */,
+				2B3BFDEE2860EA1300256C05 /* TheKnifeUITests */,
+				2B3BFDCC2860EA1100256C05 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2B3BFDCC2860EA1100256C05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B3BFDCB2860EA1100256C05 /* TheKnife.app */,
+				2B3BFDE12860EA1200256C05 /* TheKnifeTests.xctest */,
+				2B3BFDEB2860EA1300256C05 /* TheKnifeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B3BFDCD2860EA1100256C05 /* TheKnife */ = {
+			isa = PBXGroup;
+			children = (
+				2B3BFDFF2860EFD300256C05 /* Domain */,
+				2B3BFDFE2860EF5500256C05 /* Core */,
+				2B3BFE002860F23500256C05 /* UI */,
+				2B3BFDD72860EA1200256C05 /* Assets.xcassets */,
+				2B3BFDD92860EA1200256C05 /* LaunchScreen.storyboard */,
+				2B3BFDDC2860EA1200256C05 /* Info.plist */,
+			);
+			path = TheKnife;
+			sourceTree = "<group>";
+		};
+		2B3BFDE42860EA1200256C05 /* TheKnifeTests */ = {
+			isa = PBXGroup;
+			children = (
+				2B3BFE022860F24600256C05 /* Domain */,
+				2B3BFE012860F24000256C05 /* Core */,
+				2B3BFDE52860EA1200256C05 /* TheKnifeTests.swift */,
+			);
+			path = TheKnifeTests;
+			sourceTree = "<group>";
+		};
+		2B3BFDEE2860EA1300256C05 /* TheKnifeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2B3BFDEF2860EA1300256C05 /* TheKnifeUITests.swift */,
+				2B3BFDF12860EA1300256C05 /* TheKnifeUITestsLaunchTests.swift */,
+			);
+			path = TheKnifeUITests;
+			sourceTree = "<group>";
+		};
+		2B3BFDFE2860EF5500256C05 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2B3BFE2A28611A7800256C05 /* Models */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2B3BFDFF2860EFD300256C05 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				2B3BFE272861144100256C05 /* StoreProtocol.swift */,
+				2B3BFE1D2861108700256C05 /* RestaurantsStore */,
+				2B3BFE38286162F400256C05 /* FavoritesStore */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		2B3BFE002860F23500256C05 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2B3BFDCE2860EA1100256C05 /* AppDelegate.swift */,
+				2B3BFE132861080000256C05 /* MainViewController.swift */,
+				2B3BFE1728610E3400256C05 /* RestaurantsList */,
+				2B3BFE2B2861366500256C05 /* RestaurantCell */,
+				2B3BFE1C28610FB200256C05 /* RestaurantDetail */,
+				2B3BFE4228616C1000256C05 /* CustomComponents.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		2B3BFE012860F24000256C05 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2B3BFE022860F24600256C05 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		2B3BFE1728610E3400256C05 /* RestaurantsList */ = {
+			isa = PBXGroup;
+			children = (
+				2B3BFE1828610E4A00256C05 /* RestaurantsListViewModel.swift */,
+				2B3BFE152861082600256C05 /* RestaurantsListController.swift */,
+				2B3BFE1A28610E7C00256C05 /* RestaurantsListView.swift */,
+			);
+			path = RestaurantsList;
+			sourceTree = "<group>";
+		};
+		2B3BFE1C28610FB200256C05 /* RestaurantDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RestaurantDetail;
+			sourceTree = "<group>";
+		};
+		2B3BFE1D2861108700256C05 /* RestaurantsStore */ = {
+			isa = PBXGroup;
+			children = (
+				2B3BFE1E286110A800256C05 /* RestaurantsStoreProtocol.swift */,
+				2B3BFE21286111FF00256C05 /* RestaurantsRestStore.swift */,
+				2B3BFE3F2861691900256C05 /* RestaurantsMockStore.swift */,
+			);
+			path = RestaurantsStore;
+			sourceTree = "<group>";
+		};
+		2B3BFE2A28611A7800256C05 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2B3BFE242861122B00256C05 /* Restaurant.swift */,
+				2B3BFE2F28613C3E00256C05 /* RestaurantPhoto.swift */,
+				2B3BFE3228614F8E00256C05 /* RestaurantRating.swift */,
+				2B3BFE3528614FDF00256C05 /* RestaurantAddress.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2B3BFE2B2861366500256C05 /* RestaurantCell */ = {
+			isa = PBXGroup;
+			children = (
+				2B3BFE2C2861368600256C05 /* RestaurantCell.swift */,
+			);
+			path = RestaurantCell;
+			sourceTree = "<group>";
+		};
+		2B3BFE38286162F400256C05 /* FavoritesStore */ = {
+			isa = PBXGroup;
+			children = (
+				2B3BFE39286166D400256C05 /* FavoritesStoreProtocol.swift */,
+				2B3BFE3C2861671400256C05 /* FavoritesDefaultsStore.swift */,
+			);
+			path = FavoritesStore;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B3BFDCA2860EA1100256C05 /* TheKnife */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B3BFDF52860EA1300256C05 /* Build configuration list for PBXNativeTarget "TheKnife" */;
+			buildPhases = (
+				2B3BFDC72860EA1100256C05 /* Sources */,
+				2B3BFDC82860EA1100256C05 /* Frameworks */,
+				2B3BFDC92860EA1100256C05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TheKnife;
+			packageProductDependencies = (
+				2B3BFE042860F35700256C05 /* ReactiveKit */,
+				2B3BFE072860F38200256C05 /* Bond */,
+				2B3BFE0A2860F3C600256C05 /* SwifterSwift */,
+				2B3BFE0D2860F3E600256C05 /* SnapKit */,
+				2B3BFE102861064400256C05 /* Dip */,
+			);
+			productName = TheKnife;
+			productReference = 2B3BFDCB2860EA1100256C05 /* TheKnife.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2B3BFDE02860EA1200256C05 /* TheKnifeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B3BFDF82860EA1300256C05 /* Build configuration list for PBXNativeTarget "TheKnifeTests" */;
+			buildPhases = (
+				2B3BFDDD2860EA1200256C05 /* Sources */,
+				2B3BFDDE2860EA1200256C05 /* Frameworks */,
+				2B3BFDDF2860EA1200256C05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B3BFDE32860EA1200256C05 /* PBXTargetDependency */,
+			);
+			name = TheKnifeTests;
+			productName = TheKnifeTests;
+			productReference = 2B3BFDE12860EA1200256C05 /* TheKnifeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2B3BFDEA2860EA1300256C05 /* TheKnifeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B3BFDFB2860EA1300256C05 /* Build configuration list for PBXNativeTarget "TheKnifeUITests" */;
+			buildPhases = (
+				2B3BFDE72860EA1300256C05 /* Sources */,
+				2B3BFDE82860EA1300256C05 /* Frameworks */,
+				2B3BFDE92860EA1300256C05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B3BFDED2860EA1300256C05 /* PBXTargetDependency */,
+			);
+			name = TheKnifeUITests;
+			productName = TheKnifeUITests;
+			productReference = 2B3BFDEB2860EA1300256C05 /* TheKnifeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B3BFDC32860EA1100256C05 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					2B3BFDCA2860EA1100256C05 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					2B3BFDE02860EA1200256C05 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 2B3BFDCA2860EA1100256C05;
+					};
+					2B3BFDEA2860EA1300256C05 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 2B3BFDCA2860EA1100256C05;
+					};
+				};
+			};
+			buildConfigurationList = 2B3BFDC62860EA1100256C05 /* Build configuration list for PBXProject "TheKnife" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2B3BFDC22860EA1100256C05;
+			packageReferences = (
+				2B3BFE032860F35700256C05 /* XCRemoteSwiftPackageReference "ReactiveKit" */,
+				2B3BFE062860F38200256C05 /* XCRemoteSwiftPackageReference "Bond" */,
+				2B3BFE092860F3C600256C05 /* XCRemoteSwiftPackageReference "SwifterSwift" */,
+				2B3BFE0C2860F3E600256C05 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				2B3BFE0F2861064400256C05 /* XCRemoteSwiftPackageReference "Dip" */,
+			);
+			productRefGroup = 2B3BFDCC2860EA1100256C05 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B3BFDCA2860EA1100256C05 /* TheKnife */,
+				2B3BFDE02860EA1200256C05 /* TheKnifeTests */,
+				2B3BFDEA2860EA1300256C05 /* TheKnifeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B3BFDC92860EA1100256C05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B3BFDDB2860EA1200256C05 /* LaunchScreen.storyboard in Resources */,
+				2B3BFDD82860EA1200256C05 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B3BFDDF2860EA1200256C05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B3BFDE92860EA1300256C05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B3BFDC72860EA1100256C05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B3BFE2D2861368600256C05 /* RestaurantCell.swift in Sources */,
+				2B3BFE3A286166D400256C05 /* FavoritesStoreProtocol.swift in Sources */,
+				2B3BFE162861082600256C05 /* RestaurantsListController.swift in Sources */,
+				2B3BFE1928610E4A00256C05 /* RestaurantsListViewModel.swift in Sources */,
+				2B3BFE22286111FF00256C05 /* RestaurantsRestStore.swift in Sources */,
+				2B3BFE3628614FDF00256C05 /* RestaurantAddress.swift in Sources */,
+				2B3BFE1F286110A800256C05 /* RestaurantsStoreProtocol.swift in Sources */,
+				2B3BFE3028613C3E00256C05 /* RestaurantPhoto.swift in Sources */,
+				2B3BFE402861691900256C05 /* RestaurantsMockStore.swift in Sources */,
+				2B3BFE252861122B00256C05 /* Restaurant.swift in Sources */,
+				2B3BFE1B28610E7C00256C05 /* RestaurantsListView.swift in Sources */,
+				2B3BFDCF2860EA1100256C05 /* AppDelegate.swift in Sources */,
+				2B3BFE142861080000256C05 /* MainViewController.swift in Sources */,
+				2B3BFE282861144100256C05 /* StoreProtocol.swift in Sources */,
+				2B3BFE3328614F8E00256C05 /* RestaurantRating.swift in Sources */,
+				2B3BFE4328616C1000256C05 /* CustomComponents.swift in Sources */,
+				2B3BFE3D2861671400256C05 /* FavoritesDefaultsStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B3BFDDD2860EA1200256C05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B3BFE412861691900256C05 /* RestaurantsMockStore.swift in Sources */,
+				2B3BFE2E2861368600256C05 /* RestaurantCell.swift in Sources */,
+				2B3BFE262861122B00256C05 /* Restaurant.swift in Sources */,
+				2B3BFE292861144100256C05 /* StoreProtocol.swift in Sources */,
+				2B3BFE20286110A800256C05 /* RestaurantsStoreProtocol.swift in Sources */,
+				2B3BFE3E2861671400256C05 /* FavoritesDefaultsStore.swift in Sources */,
+				2B3BFDE62860EA1200256C05 /* TheKnifeTests.swift in Sources */,
+				2B3BFE3128613C3E00256C05 /* RestaurantPhoto.swift in Sources */,
+				2B3BFE4428616C1000256C05 /* CustomComponents.swift in Sources */,
+				2B3BFE3728614FDF00256C05 /* RestaurantAddress.swift in Sources */,
+				2B3BFE23286111FF00256C05 /* RestaurantsRestStore.swift in Sources */,
+				2B3BFE3428614F8E00256C05 /* RestaurantRating.swift in Sources */,
+				2B3BFE3B286166D400256C05 /* FavoritesStoreProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B3BFDE72860EA1300256C05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B3BFDF22860EA1300256C05 /* TheKnifeUITestsLaunchTests.swift in Sources */,
+				2B3BFDF02860EA1300256C05 /* TheKnifeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2B3BFDE32860EA1200256C05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B3BFDCA2860EA1100256C05 /* TheKnife */;
+			targetProxy = 2B3BFDE22860EA1200256C05 /* PBXContainerItemProxy */;
+		};
+		2B3BFDED2860EA1300256C05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B3BFDCA2860EA1100256C05 /* TheKnife */;
+			targetProxy = 2B3BFDEC2860EA1300256C05 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2B3BFDD92860EA1200256C05 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B3BFDDA2860EA1200256C05 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2B3BFDF32860EA1300256C05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2B3BFDF42860EA1300256C05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2B3BFDF62860EA1300256C05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AQUE4FE98B;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TheKnife/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MAIN_API_URL = "https://alanflament.github.io/TFTest/test.json";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.zheref.TheKnife;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		2B3BFDF72860EA1300256C05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AQUE4FE98B;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TheKnife/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MAIN_API_URL = "https://alanflament.github.io/TFTest/test.json";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.zheref.TheKnife;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		2B3BFDF92860EA1300256C05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AQUE4FE98B;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.zheref.TheKnifeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheKnife.app/TheKnife";
+			};
+			name = Debug;
+		};
+		2B3BFDFA2860EA1300256C05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AQUE4FE98B;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.zheref.TheKnifeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheKnife.app/TheKnife";
+			};
+			name = Release;
+		};
+		2B3BFDFC2860EA1300256C05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AQUE4FE98B;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.zheref.TheKnifeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TheKnife;
+			};
+			name = Debug;
+		};
+		2B3BFDFD2860EA1300256C05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AQUE4FE98B;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.zheref.TheKnifeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TheKnife;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B3BFDC62860EA1100256C05 /* Build configuration list for PBXProject "TheKnife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B3BFDF32860EA1300256C05 /* Debug */,
+				2B3BFDF42860EA1300256C05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B3BFDF52860EA1300256C05 /* Build configuration list for PBXNativeTarget "TheKnife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B3BFDF62860EA1300256C05 /* Debug */,
+				2B3BFDF72860EA1300256C05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B3BFDF82860EA1300256C05 /* Build configuration list for PBXNativeTarget "TheKnifeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B3BFDF92860EA1300256C05 /* Debug */,
+				2B3BFDFA2860EA1300256C05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B3BFDFB2860EA1300256C05 /* Build configuration list for PBXNativeTarget "TheKnifeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B3BFDFC2860EA1300256C05 /* Debug */,
+				2B3BFDFD2860EA1300256C05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2B3BFE032860F35700256C05 /* XCRemoteSwiftPackageReference "ReactiveKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/DeclarativeHub/ReactiveKit.git";
+			requirement = {
+				kind = exactVersion;
+				version = 3.19.1;
+			};
+		};
+		2B3BFE062860F38200256C05 /* XCRemoteSwiftPackageReference "Bond" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/DeclarativeHub/Bond.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		2B3BFE092860F3C600256C05 /* XCRemoteSwiftPackageReference "SwifterSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwifterSwift/SwifterSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		2B3BFE0C2860F3E600256C05 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		2B3BFE0F2861064400256C05 /* XCRemoteSwiftPackageReference "Dip" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AliSoftware/Dip";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2B3BFE042860F35700256C05 /* ReactiveKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2B3BFE032860F35700256C05 /* XCRemoteSwiftPackageReference "ReactiveKit" */;
+			productName = ReactiveKit;
+		};
+		2B3BFE072860F38200256C05 /* Bond */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2B3BFE062860F38200256C05 /* XCRemoteSwiftPackageReference "Bond" */;
+			productName = Bond;
+		};
+		2B3BFE0A2860F3C600256C05 /* SwifterSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2B3BFE092860F3C600256C05 /* XCRemoteSwiftPackageReference "SwifterSwift" */;
+			productName = SwifterSwift;
+		};
+		2B3BFE0D2860F3E600256C05 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2B3BFE0C2860F3E600256C05 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		2B3BFE102861064400256C05 /* Dip */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2B3BFE0F2861064400256C05 /* XCRemoteSwiftPackageReference "Dip" */;
+			productName = Dip;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2B3BFDC32860EA1100256C05 /* Project object */;
+}
