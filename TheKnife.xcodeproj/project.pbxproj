@@ -92,6 +92,7 @@
 		2B3BFE3C2861671400256C05 /* FavoritesDefaultsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesDefaultsStore.swift; sourceTree = "<group>"; };
 		2B3BFE3F2861691900256C05 /* RestaurantsMockStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsMockStore.swift; sourceTree = "<group>"; };
 		2B3BFE4228616C1000256C05 /* CustomComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomComponents.swift; sourceTree = "<group>"; };
+		2B3BFE4528617BD300256C05 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +128,7 @@
 		2B3BFDC22860EA1100256C05 = {
 			isa = PBXGroup;
 			children = (
+				2B3BFE4528617BD300256C05 /* README.md */,
 				2B3BFDCD2860EA1100256C05 /* TheKnife */,
 				2B3BFDE42860EA1200256C05 /* TheKnifeTests */,
 				2B3BFDEE2860EA1300256C05 /* TheKnifeUITests */,
